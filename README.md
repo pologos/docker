@@ -30,5 +30,8 @@ OS on docker with option to connect throughr RDP
 fast and is working as default with remote desktop to use it on windows environment
 
 
+## EXAMPLE:
+
+selektory CSS, generuj 
 
 
