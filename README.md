@@ -28,6 +28,31 @@ poloshell (port:8022) --[command]--> apicontext --[text2apidsl]--> (port:22) she
 
 ### List All Open Ports
 
+    From 0 to 1023: These ports are known as the Well-known ports. These ports can only be used by system (or root) processes or by programs executed by privileged users.
+    From 1024 to 49151:These ports are known as the Registered ports. These ports can be used by ordinary user processes or programs executed by ordinary users.
+    From 49152 to 65535:These ports are known as Dynamic Ports.
+    
+You can also refer to the given table that includes the most common ports with port no. and the protocol it uses:
+ 
+> | Port No | Port | Protocol |
+> | --- | --- | --- |
+> | 21 | FTP | TCP |
+> | 22 | SSH | TCP |
+> | 23 | TELNET | TCP |
+> | 25 | SMTP | TCP |
+> | 53 | DNS | TCP, UDP |
+> | 67,68 | DHCP | UDP |
+> | 80 | HTTP | TCP |
+> | 110 | POP3 | TCP |
+> | 111 | Portmapper | TCP, UDP |
+> | 123 | NTP | UDP |
+> | 137 | NetBIOS | TCP, UDP |
+> | 143 | IMAP | TCP, UDP |
+> | 161,162 | SNMP | UDP |
+> | 443 | HTTPS | TCP |
+
+
+
 Before opening a port on Linux, you must check the list of all open ports, and choose an ephemeral port to open that is not on that list.
 
 Use the netstat command to list all open ports, including TCP and UDP, which are the most common protocols for packet transmission in the network layer.
@@ -84,26 +109,6 @@ DNS - 53
 
 This is one of my personal favorites, as it turns the domain name into an IP address. So you may write any keyword in your search bar and don't have to remember the IP address for each site.
 
-[Common Networking Port Numbers in Linux](https://linuxhandbook.com/common-ports/)
-
-> You can also refer to the given table that includes the most common ports with port no. and the protocol it uses:
-> 
-> | Port No | Port | Protocol |
-> | --- | --- | --- |
-> | 21 | FTP | TCP |
-> | 22 | SSH | TCP |
-> | 23 | TELNET | TCP |
-> | 25 | SMTP | TCP |
-> | 53 | DNS | TCP, UDP |
-> | 67,68 | DHCP | UDP |
-> | 80 | HTTP | TCP |
-> | 110 | POP3 | TCP |
-> | 111 | Portmapper | TCP, UDP |
-> | 123 | NTP | UDP |
-> | 137 | NetBIOS | TCP, UDP |
-> | 143 | IMAP | TCP, UDP |
-> | 161,162 | SNMP | UDP |
-> | 443 | HTTPS | TCP |
 
 ### Automatisation
 
