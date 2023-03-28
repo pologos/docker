@@ -11,7 +11,10 @@ poloshell (port:8022) --[command]--> apicontext --[text2apidsl]--> (port:22) she
 
 ## Tech stack
 + fedora os 
-+ shell: poloshell to write commands
++ shell:
+  + bash (22) - admin terminal
+  + fish (2222) - user terminal
+  + poloshell (8022) - customer web terminal to write commands
 + apicontext: convert the commands from poloshell to botreck on browser
 + browser: chromium 
 + browser plugins: botreck 
