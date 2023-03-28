@@ -10,8 +10,6 @@ poloshell (port:8022) --[command]--> apicontext --[text2apidsl]--> (port:22) she
 
 
 
-
-
 ## Tech stack
 
 + fedora os 
@@ -19,7 +17,7 @@ poloshell (port:8022) --[command]--> apicontext --[text2apidsl]--> (port:22) she
   + bash (22) - admin terminal
   + fish (122) - user terminal
   + ssh poloshell (222) - customer web terminal to write commands
-  + web poloshell (8222) - customer web terminal to write commands
+  + web poloshell (8022) - customer web terminal to write commands
 + apicontext: convert the commands from poloshell to botreck on browser
 + browser: chromium 
 + browser plugins: botreck 
@@ -28,6 +26,8 @@ poloshell (port:8022) --[command]--> apicontext --[text2apidsl]--> (port:22) she
 
 
 ### List All Open Ports
+
+[List of TCP and UDP port numbers - Wikipedia](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
 
     From 0 to 1023: These ports are known as the Well-known ports. These ports can only be used by system (or root) processes or by programs executed by privileged users.
     From 1024 to 49151:These ports are known as the Registered ports. These ports can be used by ordinary user processes or programs executed by ordinary users.
