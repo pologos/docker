@@ -29,12 +29,22 @@ poloshell (port:8022) --[command]--> apicontext --[text2apidsl]--> (port:22) she
 
 [List of TCP and UDP port numbers - Wikipedia](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
 
-    From 0 to 1023: These ports are known as the Well-known ports. These ports can only be used by system (or root) processes or by programs executed by privileged users.
-    From 1024 to 49151:These ports are known as the Registered ports. These ports can be used by ordinary user processes or programs executed by ordinary users.
-    From 49152 to 65535:These ports are known as Dynamic Ports.
+
+From 0 to 1023: These ports are known as the Well-known ports. These ports can only be used by system (or root) processes or by programs executed by privileged users.
+
+From 1024 to 49151:These ports are known as the Registered ports. These ports can be used by ordinary user processes or programs executed by ordinary users.
+
+From 49152 to 65535:These ports are known as Dynamic Ports.
     
+
 You can also refer to the given table that includes the most common ports with port no. and the protocol it uses:
- 
+
+
+    cat /etc/services | grep 22
+
+![image](https://user-images.githubusercontent.com/5669657/228294453-df5acf20-48f2-4c6f-a658-71fef22b1b3d.png)
+
+
 > | Port No | Port | Protocol |
 > | --- | --- | --- |
 > | 21 | FTP | TCP |
